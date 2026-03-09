@@ -2,7 +2,7 @@
 
 <p align="center"> <img src="https://komarev.com/ghpvc/?username=adrianmtztrev&label=Profile%20views&color=0e75b6&style=flat" alt="adrianmtztrev" /> </p>
 
-![AdrianMtzTrev's GitHub Banner](https://raw.githubusercontent.com/AdrianMtzTrev/AdrianMtzTrev/main/AdrianMtzTrev-readme-banner.png)
+![AdrianMtzTrev's GitHub Banner](https://raw.githubusercontent.com/AdrianMtzTrev/AdrianMtzTrev/main/media/banner/AdrianMtzTrev-readme-banner.png)
 
 <h3 align="left">Main skills</h3>
 <p align="left">
