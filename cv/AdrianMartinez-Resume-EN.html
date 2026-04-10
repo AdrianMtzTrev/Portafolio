@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adrian Martinez Treviño — Resume</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 11px;
+      color: #222;
+      background: #fff;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      padding: 14mm 16mm 14mm 16mm;
+    }
+
+    /* ── Header ── */
+    .header-name {
+      font-size: 30px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #111;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .header-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #0077B6;
+      margin-bottom: 8px;
+    }
+
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 18px;
+      font-size: 10px;
+      color: #444;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #0077B6;
+    }
+
+    .contact-bar a {
+      color: #0077B6;
+      text-decoration: none;
+    }
+
+    .contact-bar span::before {
+      content: attr(data-icon) " ";
+      color: #0077B6;
+    }
+
+    /* ── Sections ── */
+    .section {
+      margin-bottom: 14px;
+    }
+
+    .section-title {
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #111;
+      border-bottom: 1.5px solid #ddd;
+      padding-bottom: 3px;
+      margin-bottom: 10px;
+    }
+
+    /* ── Summary ── */
+    .summary-text {
+      font-size: 10.5px;
+      color: #444;
+      line-height: 1.65;
+    }
+
+    /* ── Skills ── */
+    .skills-text {
+      font-size: 10.5px;
+      color: #444;
+      line-height: 1.8;
+    }
+
+    /* ── Experience ── */
+    .exp-entry {
+      margin-bottom: 12px;
+    }
+
+    .exp-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .exp-jobtitle {
+      font-size: 11.5px;
+      font-weight: 800;
+      color: #111;
+    }
+
+    .exp-date {
+      font-size: 10px;
+      color: #666;
+      white-space: nowrap;
+    }
+
+    .exp-company {
+      font-size: 10.5px;
+      font-weight: 700;
+      color: #0077B6;
+      margin-bottom: 5px;
+    }
+
+    .exp-location {
+      font-weight: 400;
+      font-size: 10px;
+      color: #888;
+    }
+
+    .exp-bullets {
+      padding-left: 14px;
+    }
+
+    .exp-bullets li {
+      font-size: 10.5px;
+      color: #333;
+      margin-bottom: 3px;
+      line-height: 1.5;
+    }
+
+    .tech-row {
+      margin-top: 5px;
+      font-size: 10px;
+      color: #555;
+    }
+
+    .tech-row strong {
+      color: #333;
+    }
+
+    /* ── Education ── */
+    .edu-entry {
+      margin-bottom: 10px;
+    }
+
+    .edu-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .edu-degree {
+      font-size: 11.5px;
+      font-weight: 800;
+      color: #111;
+    }
+
+    .edu-date {
+      font-size: 10px;
+      color: #666;
+      white-space: nowrap;
+    }
+
+    .edu-school {
+      font-size: 10.5px;
+      font-weight: 700;
+      color: #0077B6;
+      margin-bottom: 5px;
+    }
+
+    /* ── Projects ── */
+    .proj-entry {
+      margin-bottom: 11px;
+    }
+
+    .proj-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .proj-name {
+      font-size: 11.5px;
+      font-weight: 800;
+      color: #111;
+    }
+
+    .proj-date {
+      font-size: 10px;
+      color: #666;
+    }
+
+    .proj-link {
+      font-size: 10px;
+      color: #0077B6;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .proj-bullets {
+      padding-left: 14px;
+    }
+
+    .proj-bullets li {
+      font-size: 10.5px;
+      color: #333;
+      margin-bottom: 3px;
+      line-height: 1.5;
+    }
+
+    /* ── Print ── */
+    @media print {
+      body { background: #fff; }
+      .page { margin: 0; padding: 12mm 15mm; width: 100%; }
+      @page { margin: 0; size: A4; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header-name">Adrian Martinez Treviño</div>
+  <div class="header-title">Full Stack Developer &nbsp;·&nbsp; C# &amp; React</div>
+
+  <div class="contact-bar">
+    <span data-icon="📞">+52 81 15 75 95 79</span>
+    <span data-icon="✉">adrianmtztrev@hotmail.com</span>
+    <span data-icon="🔗"><a href="https://github.com/AdrianMtzTrev">github.com/AdrianMtzTrev</a></span>
+    <span data-icon="📍">Nuevo León, Mexico &nbsp;·&nbsp; Open to Remote</span>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="section">
+    <div class="section-title">Summary</div>
+    <p class="summary-text">
+      Full Stack Developer with hands-on experience building REST APIs in C# and frontend applications with React/TypeScript. Skilled in relational database management, server infrastructure, and DevOps practices including Docker and Linux migrations. Shipped a production e-commerce platform integrating multiple payment gateways and third-party APIs. Passionate about clean code, automation, and continuous learning. Comfortable working across development, maintenance, and technical support in remote teams.
+    </p>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section">
+    <div class="section-title">Skills</div>
+    <p class="skills-text">
+      <strong>Languages:</strong> C#, TypeScript, JavaScript, Python, C/C++, HTML/CSS &nbsp;|&nbsp;
+      <strong>Frameworks:</strong> React, Next.js, Blazor &nbsp;|&nbsp;
+      <strong>Databases:</strong> PostgreSQL, Supabase &nbsp;|&nbsp;
+      <strong>DevOps:</strong> Docker, Linux, Windows Server, Git, Vercel &nbsp;|&nbsp;
+      <strong>Integrations:</strong> OAuth / Google Auth, Stripe, REST APIs &nbsp;|&nbsp;
+      <strong>Languages:</strong> Spanish (Native), English (Advanced)
+    </p>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Experience</div>
+
+    <div class="exp-entry">
+      <div class="exp-top">
+        <span class="exp-jobtitle">Backend Developer / Data Analyst</span>
+        <span class="exp-date">Jul 2025 – Present</span>
+      </div>
+      <div class="exp-company">Maxima &nbsp;·&nbsp; <span class="exp-location">Apodaca, Nuevo León, Mexico (Remote)</span></div>
+      <ul class="exp-bullets">
+        <li>Joined an active development team to migrate an enterprise ERM from a desktop application to a web platform using Blazor (C#) and PostgreSQL.</li>
+        <li>Implemented Google OAuth authentication for the web-based ERM, integrating with the existing user management system.</li>
+        <li>Managed the team's GitHub repository: code reviews, branch management, conflict resolution, and version control.</li>
+        <li>Administered a Windows Server environment and led its migration to Linux using virtual machines and Docker containers.</li>
+        <li>Analyzed operational data to produce reports supporting business decision-making.</li>
+      </ul>
+      <div class="tech-row"><strong>Stack:</strong> C#, Blazor, PostgreSQL, OAuth, Docker, Linux, Windows Server, Git</div>
+    </div>
+
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-title">Education</div>
+
+    <div class="edu-entry">
+      <div class="edu-top">
+        <span class="edu-degree">Faculty of Physical-Mathematical Sciences — LMAD</span>
+        <span class="edu-date">Aug 2022 – Present</span>
+      </div>
+      <div class="edu-school">Specialization in Programming &amp; Software Engineering</div>
+      <ul class="exp-bullets">
+        <li>Object-Oriented Programming, Data Structures, Operating Systems fundamentals, and Computational Graphics.</li>
+        <li>Web development coursework: Web Programming I &amp; II, Web Interface &amp; User Experience.</li>
+        <li>Programming electives track: Assembly Language, Database Administration &amp; Data Warehousing, Mobile Systems Programming, Server Administration, and Software Engineering.</li>
+        <li>Developed and deployed web applications with HTML5/CSS3 on AWS and Azure.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section">
+    <div class="section-title">Projects</div>
+
+    <div class="proj-entry">
+      <div class="proj-top">
+        <span class="proj-name">Gear Pro — Production E-commerce Platform</span>
+        <span class="proj-date">2025</span>
+      </div>
+      <div class="proj-link">gearpro.mx &nbsp;·&nbsp; gearpro.shop</div>
+      <ul class="proj-bullets">
+        <li>Architected a Turborepo monorepo with a public storefront (Next.js/TypeScript) and a separate admin panel, both deployed to Vercel.</li>
+        <li>Integrated 3 payment gateways: Stripe, Mercado Pago, and PayPal, supporting card, OXXO, bank transfer, and international payments.</li>
+        <li>Implemented real-time shipping quotes and label generation via Skydropx API.</li>
+        <li>Set up Supabase for authentication, role-based access control (admin/customer), database, and image storage; transactional emails via Resend.</li>
+      </ul>
+      <div class="tech-row"><strong>Stack:</strong> Next.js 16, React, TypeScript, Tailwind CSS v4, Supabase, Stripe, Turborepo, Vercel</div>
+    </div>
+
+    <div class="proj-entry">
+      <div class="proj-top">
+        <span class="proj-name">Oktodo — Android Productivity App</span>
+        <span class="proj-date">2026</span>
+      </div>
+      <div class="proj-link">github.com/AdrianMtzTrev/Oktodo</div>
+      <ul class="proj-bullets">
+        <li>Developed an Android app to help users overcome procrastination through collaborative study groups with shared task tracking.</li>
+      </ul>
+      <div class="tech-row"><strong>Stack:</strong> Kotlin, Android</div>
+    </div>
+
+    <div class="proj-entry">
+      <div class="proj-top">
+        <span class="proj-name">DeFi Hedge Fund</span>
+        <span class="proj-date">2025</span>
+      </div>
+      <div class="proj-link">github.com/AdrianMtzTrev/DeFi-Hedge-Fund</div>
+      <ul class="proj-bullets">
+        <li>Built a decentralized investment fund where users connect their crypto wallet and contribute to a managed on-chain fund.</li>
+      </ul>
+      <div class="tech-row"><strong>Stack:</strong> TypeScript, React, Web3</div>
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adrian Martinez Treviño — CV</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 11px;
+      color: #222;
+      background: #fff;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      padding: 14mm 16mm 14mm 16mm;
+    }
+
+    /* ── Header ── */
+    .header-name {
+      font-size: 30px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #111;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .header-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #0077B6;
+      margin-bottom: 8px;
+    }
+
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 18px;
+      font-size: 10px;
+      color: #444;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #0077B6;
+    }
+
+    .contact-bar a {
+      color: #0077B6;
+      text-decoration: none;
+    }
+
+    .contact-bar span::before {
+      content: attr(data-icon) " ";
+      color: #0077B6;
+    }
+
+    /* ── Sections ── */
+    .section {
+      margin-bottom: 14px;
+    }
+
+    .section-title {
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #111;
+      border-bottom: 1.5px solid #ddd;
+      padding-bottom: 3px;
+      margin-bottom: 10px;
+    }
+
+    /* ── Summary ── */
+    .summary-text {
+      font-size: 10.5px;
+      color: #444;
+      line-height: 1.65;
+    }
+
+    /* ── Skills ── */
+    .skills-text {
+      font-size: 10.5px;
+      color: #444;
+      line-height: 1.8;
+    }
+
+    /* ── Experience ── */
+    .exp-entry {
+      margin-bottom: 12px;
+    }
+
+    .exp-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .exp-jobtitle {
+      font-size: 11.5px;
+      font-weight: 800;
+      color: #111;
+    }
+
+    .exp-date {
+      font-size: 10px;
+      color: #666;
+      white-space: nowrap;
+    }
+
+    .exp-company {
+      font-size: 10.5px;
+      font-weight: 700;
+      color: #0077B6;
+      margin-bottom: 5px;
+    }
+
+    .exp-location {
+      font-size: 10px;
+      color: #888;
+    }
+
+    .exp-bullets {
+      padding-left: 14px;
+    }
+
+    .exp-bullets li {
+      font-size: 10.5px;
+      color: #333;
+      margin-bottom: 3px;
+      line-height: 1.5;
+    }
+
+    .tech-row {
+      margin-top: 5px;
+      font-size: 10px;
+      color: #555;
+    }
+
+    .tech-row strong {
+      color: #333;
+    }
+
+    /* ── Education ── */
+    .edu-entry {
+      margin-bottom: 10px;
+    }
+
+    .edu-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .edu-degree {
+      font-size: 11.5px;
+      font-weight: 800;
+      color: #111;
+    }
+
+    .edu-date {
+      font-size: 10px;
+      color: #666;
+      white-space: nowrap;
+    }
+
+    .edu-school {
+      font-size: 10.5px;
+      font-weight: 700;
+      color: #0077B6;
+      margin-bottom: 5px;
+    }
+
+    /* ── Projects ── */
+    .proj-entry {
+      margin-bottom: 11px;
+    }
+
+    .proj-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .proj-name {
+      font-size: 11.5px;
+      font-weight: 800;
+      color: #111;
+    }
+
+    .proj-date {
+      font-size: 10px;
+      color: #666;
+    }
+
+    .proj-link {
+      font-size: 10px;
+      color: #0077B6;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .proj-bullets {
+      padding-left: 14px;
+    }
+
+    .proj-bullets li {
+      font-size: 10.5px;
+      color: #333;
+      margin-bottom: 3px;
+      line-height: 1.5;
+    }
+
+    /* ── Print ── */
+    @media print {
+      body { background: #fff; }
+      .page { margin: 0; padding: 12mm 15mm; width: 100%; }
+      @page { margin: 0; size: A4; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header-name">Adrian Martinez Treviño</div>
+  <div class="header-title">Desarrollador Full Stack &nbsp;·&nbsp; C# &amp; React</div>
+
+  <div class="contact-bar">
+    <span data-icon="📞">+81 15 75 95 79</span>
+    <span data-icon="✉">adrianmtztrev@hotmail.com</span>
+    <span data-icon="🔗"><a href="https://github.com/AdrianMtzTrev">github.com/AdrianMtzTrev</a></span>
+    <span data-icon="📍">Apodaca, Nuevo León, México</span>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="section">
+    <div class="section-title">Resumen</div>
+    <p class="summary-text">
+      Desarrollador Full Stack con experiencia en React/TypeScript y APIs REST en C#, administración de bases de datos relacionales y gestión de infraestructura de servidores. Apasionado por la automatización y el aprendizaje continuo de nuevas tecnologías. Capaz de trabajar tanto en desarrollo de nuevas funcionalidades como en mantenimiento, soporte técnico y resolución de incidencias, adaptándome con facilidad a los flujos de trabajo del equipo.
+    </p>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section">
+    <div class="section-title">Habilidades</div>
+    <p class="skills-text">
+      <strong>Lenguajes:</strong> C#, TypeScript, JavaScript, Python, C/C++, HTML/CSS &nbsp;|&nbsp;
+      <strong>Frameworks:</strong> React, Next.js, Blazor &nbsp;|&nbsp;
+      <strong>Bases de datos:</strong> PostgreSQL, Supabase &nbsp;|&nbsp;
+      <strong>DevOps:</strong> Docker, Linux, Windows Server, Git, Vercel &nbsp;|&nbsp;
+      <strong>Integraciones:</strong> OAuth / Google Auth, Stripe, REST APIs &nbsp;|&nbsp;
+      <strong>Idiomas:</strong> Español (Nativo), Inglés (Avanzado)
+    </p>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Experiencia</div>
+
+    <div class="exp-entry">
+      <div class="exp-top">
+        <span class="exp-jobtitle">Backend Developer / Analista de Datos</span>
+        <span class="exp-date">Jul 2025 — Actual</span>
+      </div>
+      <div class="exp-company">Maxima &nbsp;·&nbsp; <span class="exp-location">Apodaca, Nuevo León (Remoto)</span></div>
+      <ul class="exp-bullets">
+        <li>Integración al equipo de desarrollo de un ERM empresarial, apoyando su migración de aplicación de escritorio a plataforma web con Blazor (C#) y PostgreSQL.</li>
+        <li>Implementación de autenticación con Google (OAuth) en el sistema ERM web.</li>
+        <li>Mantenimiento y gestión del repositorio en GitHub: revisión de código, resolución de conflictos y control de versiones en equipo.</li>
+        <li>Administración de servidor Windows Server y migración a Linux usando máquinas virtuales y Docker.</li>
+        <li>Análisis de datos operativos para soporte a la toma de decisiones.</li>
+      </ul>
+      <div class="tech-row"><strong>Stack:</strong> C#, Blazor, PostgreSQL, OAuth, Docker, Linux, Windows Server, Git</div>
+    </div>
+
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-title">Educación</div>
+
+    <div class="edu-entry">
+      <div class="edu-top">
+        <span class="edu-degree">Facultad de Ciencias Físico Matemáticas — LMAD</span>
+        <span class="edu-date">Ago 2022 — Actual</span>
+      </div>
+      <div class="edu-school">Especialidad en Programación e Ingeniería de Software</div>
+      <ul class="exp-bullets">
+        <li>Programación orientada a objetos, estructuras de datos, fundamentos de sistemas operativos y gráficos computacionales.</li>
+        <li>Desarrollo web: Programación web I y II, Interface y experiencia de usuario web.</li>
+        <li>Optativas — Rama de Programación: Lenguaje ensamblador, Administración de BD y almacén de datos, Programación de sistemas móviles, Administración de servidores e Ingeniería en software.</li>
+        <li>Creación y despliegue de aplicaciones web con HTML5/CSS3 en AWS y Azure.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section">
+    <div class="section-title">Proyectos Destacados</div>
+
+    <div class="proj-entry">
+      <div class="proj-top">
+        <span class="proj-name">Gear Pro — E-commerce en producción</span>
+        <span class="proj-date">2025</span>
+      </div>
+      <div class="proj-link">gearpro.mx &nbsp;·&nbsp; gearpro.shop</div>
+      <ul class="proj-bullets">
+        <li>Monorepo con tienda pública (Next.js/TypeScript) y panel de administración, ambos desplegados en Vercel.</li>
+        <li>Integración de 3 pasarelas de pago: Stripe, Mercado Pago y PayPal.</li>
+        <li>Cotización y generación de guías de envío en tiempo real con Skydropx.</li>
+        <li>Autenticación con Supabase, gestión de roles (admin/cliente) y emails transaccionales con Resend.</li>
+      </ul>
+      <div class="tech-row"><strong>Stack:</strong> Next.js 16, React, TypeScript, Tailwind CSS, Supabase, Stripe, Turborepo, Vercel</div>
+    </div>
+
+    <div class="proj-entry">
+      <div class="proj-top">
+        <span class="proj-name">Oktodo — Productivity App</span>
+        <span class="proj-date">2026</span>
+      </div>
+      <div class="proj-link">github.com/AdrianMtzTrev/Oktodo</div>
+      <ul class="proj-bullets">
+        <li>Aplicación Android para combatir la procrastinación con grupos de estudio colaborativos.</li>
+      </ul>
+      <div class="tech-row"><strong>Stack:</strong> Kotlin, Android</div>
+    </div>
+
+    <div class="proj-entry">
+      <div class="proj-top">
+        <span class="proj-name">DeFi Hedge Fund</span>
+        <span class="proj-date">2025</span>
+      </div>
+      <div class="proj-link">github.com/AdrianMtzTrev/DeFi-Hedge-Fund</div>
+      <ul class="proj-bullets">
+        <li>Fondo de inversión descentralizado donde usuarios conectan su wallet y participan en un fondo cripto.</li>
+      </ul>
+      <div class="tech-row"><strong>Stack:</strong> TypeScript, React, Web3</div>
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>

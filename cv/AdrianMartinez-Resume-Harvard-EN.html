@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adrian Martinez Treviño — Resume Harvard</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-size: 11px;
+      color: #000;
+      background: #fff;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      padding: 18mm 20mm 18mm 20mm;
+    }
+
+    /* ── Header ── */
+    .header {
+      text-align: center;
+      margin-bottom: 6px;
+    }
+
+    .header-name {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #000;
+    }
+
+    .header-contact {
+      font-size: 10px;
+      color: #000;
+      margin-top: 4px;
+      line-height: 1.6;
+    }
+
+    .header-contact a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    .header-divider {
+      border: none;
+      border-top: 1.5px solid #000;
+      margin: 8px 0 0 0;
+    }
+
+    /* ── Sections ── */
+    .section {
+      margin-top: 12px;
+    }
+
+    .section-title {
+      font-size: 11px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      border-bottom: 1px solid #000;
+      padding-bottom: 2px;
+      margin-bottom: 8px;
+    }
+
+    /* ── Entry layout ── */
+    .entry {
+      margin-bottom: 9px;
+    }
+
+    .entry-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .entry-left {
+      flex: 1;
+    }
+
+    .entry-date {
+      font-size: 10.5px;
+      white-space: nowrap;
+      margin-left: 12px;
+      font-style: italic;
+    }
+
+    .entry-title {
+      font-size: 11px;
+      font-weight: bold;
+    }
+
+    .entry-subtitle {
+      font-size: 10.5px;
+      font-style: italic;
+      margin-top: 1px;
+    }
+
+    .entry-bullets {
+      margin-top: 4px;
+      padding-left: 16px;
+    }
+
+    .entry-bullets li {
+      font-size: 10.5px;
+      line-height: 1.55;
+      margin-bottom: 2px;
+    }
+
+    /* ── Skills ── */
+    .skills-block {
+      font-size: 10.5px;
+      line-height: 1.8;
+    }
+
+    .skills-block strong {
+      font-weight: bold;
+    }
+
+    /* ── Print ── */
+    @media print {
+      body { background: #fff; }
+      .page { margin: 0; padding: 16mm 18mm; width: 100%; }
+      @page { margin: 0; size: A4; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-name">Adrian Martinez Treviño</div>
+    <div class="header-contact">
+      Nuevo León, Mexico &nbsp;·&nbsp; Open to Remote &nbsp;|&nbsp;
+      +52 81 15 75 95 79 &nbsp;|&nbsp;
+      adrianmtztrev@hotmail.com &nbsp;|&nbsp;
+      <a href="https://github.com/AdrianMtzTrev">github.com/AdrianMtzTrev</a>
+    </div>
+  </div>
+  <hr class="header-divider"/>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-title">Education</div>
+
+    <div class="entry">
+      <div class="entry-top">
+        <div class="entry-left">
+          <div class="entry-title">Faculty of Physical-Mathematical Sciences — LMAD</div>
+          <div class="entry-subtitle">Specialization in Programming &amp; Software Engineering</div>
+        </div>
+        <div class="entry-date">Aug. 2022 – Present</div>
+      </div>
+      <ul class="entry-bullets">
+        <li>Object-Oriented Programming, Data Structures, Operating Systems fundamentals, and Computational Graphics.</li>
+        <li>Web development coursework: Web Programming I &amp; II, Web Interface &amp; User Experience.</li>
+        <li>Programming electives track: Assembly Language, Database Administration &amp; Data Warehousing, Mobile Systems Programming, Server Administration, and Software Engineering.</li>
+        <li>Developed and deployed web applications with HTML5/CSS3 on AWS and Azure.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Experience</div>
+
+    <div class="entry">
+      <div class="entry-top">
+        <div class="entry-left">
+          <div class="entry-title">Backend Developer / Data Analyst</div>
+          <div class="entry-subtitle">Maxima · Cargo Monterrey &nbsp;—&nbsp; Apodaca, Nuevo León, Mexico (Remote)</div>
+        </div>
+        <div class="entry-date">Jul. 2025 – Present</div>
+      </div>
+      <ul class="entry-bullets">
+        <li>Joined an active development team to migrate an enterprise ERM from a desktop application to a web platform using Blazor (C#) and PostgreSQL.</li>
+        <li>Implemented Google OAuth authentication for the web-based ERM, integrating with the existing user management system.</li>
+        <li>Managed the team's GitHub repository: code reviews, branch management, conflict resolution, and version control.</li>
+        <li>Administered a Windows Server environment and led its migration to Linux using virtual machines and Docker containers.</li>
+        <li>Analyzed operational data to produce reports supporting business decision-making.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section">
+    <div class="section-title">Projects</div>
+
+    <div class="entry">
+      <div class="entry-top">
+        <div class="entry-left">
+          <div class="entry-title">Gear Pro — Production E-commerce Platform</div>
+          <div class="entry-subtitle">gearpro.mx &nbsp;·&nbsp; gearpro.shop</div>
+        </div>
+        <div class="entry-date">2025</div>
+      </div>
+      <ul class="entry-bullets">
+        <li>Architected a Turborepo monorepo with a public storefront (Next.js/TypeScript) and a separate admin panel, both deployed to Vercel.</li>
+        <li>Integrated 3 payment gateways: Stripe, Mercado Pago, and PayPal, supporting card, OXXO, bank transfer, and international payments.</li>
+        <li>Implemented real-time shipping quotes and label generation via Skydropx API.</li>
+        <li>Set up Supabase for authentication, role-based access control, database, and image storage; transactional emails via Resend.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-top">
+        <div class="entry-left">
+          <div class="entry-title">Oktodo — Android Productivity App</div>
+          <div class="entry-subtitle">github.com/AdrianMtzTrev/Oktodo</div>
+        </div>
+        <div class="entry-date">2026</div>
+      </div>
+      <ul class="entry-bullets">
+        <li>Developed an Android app to help users overcome procrastination through collaborative study groups with shared task tracking.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-top">
+        <div class="entry-left">
+          <div class="entry-title">DeFi Hedge Fund</div>
+          <div class="entry-subtitle">github.com/AdrianMtzTrev/DeFi-Hedge-Fund</div>
+        </div>
+        <div class="entry-date">2025</div>
+      </div>
+      <ul class="entry-bullets">
+        <li>Built a decentralized investment fund where users connect their crypto wallet and contribute to a managed on-chain fund.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-block">
+      <strong>Languages:</strong> C#, TypeScript, JavaScript, Python, C/C++, HTML/CSS<br/>
+      <strong>Frameworks:</strong> React, Next.js, Blazor<br/>
+      <strong>Databases:</strong> PostgreSQL, Supabase<br/>
+      <strong>DevOps:</strong> Docker, Linux, Windows Server, Git, Vercel<br/>
+      <strong>Integrations:</strong> OAuth / Google Auth, Stripe, REST APIs<br/>
+      <strong>Languages:</strong> Spanish (Native), English (Advanced)
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
