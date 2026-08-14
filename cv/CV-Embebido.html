@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Adrian Martinez Treviño — Resume</title>
+  <title>Adrian Martinez Treviño — Embedded Software Engineer Resume</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -21,7 +21,6 @@
       padding: 14mm 16mm 14mm 16mm;
     }
 
-    /* ── Header ── */
     .header-name {
       font-size: 30px;
       font-weight: 900;
@@ -60,7 +59,6 @@
       color: #0077B6;
     }
 
-    /* ── Sections ── */
     .section {
       margin-bottom: 14px;
     }
@@ -76,21 +74,23 @@
       margin-bottom: 10px;
     }
 
-    /* ── Summary ── */
     .summary-text {
       font-size: 10.5px;
       color: #444;
       line-height: 1.65;
     }
 
-    /* ── Skills ── */
     .skills-text {
       font-size: 10.5px;
       color: #444;
       line-height: 1.8;
     }
 
-    /* ── Experience ── */
+    .skills-text em {
+      color: #0077B6;
+      font-style: italic;
+    }
+
     .exp-entry {
       margin-bottom: 12px;
     }
@@ -147,7 +147,6 @@
       color: #333;
     }
 
-    /* ── Education ── */
     .edu-entry {
       margin-bottom: 10px;
     }
@@ -177,7 +176,6 @@
       margin-bottom: 5px;
     }
 
-    /* ── Projects ── */
     .proj-entry {
       margin-bottom: 11px;
     }
@@ -217,7 +215,6 @@
       line-height: 1.5;
     }
 
-    /* ── Print ── */
     @media print {
       body { background: #fff; }
       .page { margin: 0; padding: 12mm 15mm; width: 100%; }
@@ -230,20 +227,24 @@
 
   <!-- HEADER -->
   <div class="header-name">Adrian Martinez Treviño</div>
-  <div class="header-title">Full Stack Developer &nbsp;·&nbsp; C# &amp; React</div>
+  <div class="header-title">Software Engineer &nbsp;·&nbsp; C/C++ &nbsp;·&nbsp; Embedded Systems &amp; Linux</div>
 
   <div class="contact-bar">
     <span data-icon="📞">+52 81 15 75 95 79</span>
     <span data-icon="✉">adrianmtztrev@hotmail.com</span>
     <span data-icon="🔗"><a href="https://github.com/AdrianMtzTrev">github.com/AdrianMtzTrev</a></span>
-    <span data-icon="📍">Nuevo León, Mexico &nbsp;·&nbsp; Open to Remote</span>
+    <span data-icon="📍">Nuevo León, Mexico &nbsp;·&nbsp; Garza García Area</span>
   </div>
 
   <!-- SUMMARY -->
   <div class="section">
     <div class="section-title">Summary</div>
     <p class="summary-text">
-      Full Stack Developer with hands-on experience building REST APIs in C# and frontend applications with React/TypeScript. Skilled in relational database management, server infrastructure, and DevOps practices including Docker and Linux migrations. Shipped a production e-commerce platform integrating multiple payment gateways and third-party APIs. Passionate about clean code, automation, and continuous learning. Comfortable working across development, maintenance, and technical support in remote teams.
+      Software engineer with a passion for C/C++ and low-level systems. Hands-on Linux administration and server
+      infrastructure (Docker, Windows Server → Linux migrations), CI/CD pipelines (GitHub Actions, rsync, Jenkins
+      concepts), and Git-based team workflows. Currently building embedded-focused projects in C — an HTTP server
+      and CAN bus tooling with SocketCAN — and studying embedded communication protocols (CAN/J1939, I2C, SPI, UART),
+      cross-compilation, and QEMU-based testing. Comfortable debugging across application, OS, and hardware layers.
     </p>
   </div>
 
@@ -251,11 +252,10 @@
   <div class="section">
     <div class="section-title">Skills</div>
     <p class="skills-text">
-      <strong>Languages:</strong> C#, TypeScript, JavaScript, Python, C/C++, HTML/CSS &nbsp;|&nbsp;
-      <strong>Frameworks:</strong> React, Next.js, Blazor &nbsp;|&nbsp;
-      <strong>Databases:</strong> PostgreSQL, Supabase &nbsp;|&nbsp;
-      <strong>DevOps:</strong> Docker, Linux, Windows Server, Git, Vercel &nbsp;|&nbsp;
-      <strong>Integrations:</strong> OAuth / Google Auth, Stripe, REST APIs &nbsp;|&nbsp;
+      <strong>Languages:</strong> C, C++, Python, C#, Assembly (coursework) &nbsp;|&nbsp;
+      <strong>Embedded:</strong> CAN <em>(learning — SocketCAN, J1939/ISOBUS)</em>, I2C, SPI, UART <em>(learning)</em>, cross-compilation, QEMU <em>(learning)</em>, Buildroot/Yocto <em>(learning)</em> &nbsp;|&nbsp;
+      <strong>Build &amp; Release:</strong> Linux, Docker, Git/GitHub, GitHub Actions, CI/CD, Makefile/CMake, Markdown, Jenkins <em>(familiar)</em> &nbsp;|&nbsp;
+      <strong>Debug:</strong> gdb, valgrind, dmesg, strace, /sys, /proc &nbsp;|&nbsp;
       <strong>Languages:</strong> Spanish (Native), English (Advanced)
     </p>
   </div>
@@ -266,47 +266,43 @@
 
     <div class="exp-entry">
       <div class="exp-top">
+        <span class="exp-jobtitle">Backend Developer / Systems Administrator</span>
+        <span class="exp-date">Jul 2025 – Present</span>
+      </div>
+      <div class="exp-company">Maxima &nbsp;·&nbsp; <span class="exp-location">Guadalupe, Nuevo León, Mexico (On-site)</span></div>
+      <ul class="exp-bullets">
+        <li>Administered a Windows Server environment and led the migration to Linux using VMs and Docker containers, taking over day-to-day server management, users, services, and backups.</li>
+        <li>Managed the team's GitHub repository: code reviews, branch management, conflict resolution, and release tagging.</li>
+        <li>Developed backend in C# for a web-based enterprise system (Blazor + PostgreSQL); implemented Google OAuth integration.</li>
+        <li>Automated operational data analysis to produce reports supporting business decisions.</li>
+      </ul>
+      <div class="tech-row"><strong>Stack:</strong> Linux, Docker, Git/GitHub, C#, Blazor, PostgreSQL</div>
+    </div>
+
+    <div class="exp-entry">
+      <div class="exp-top">
         <span class="exp-jobtitle">Junior Backend Developer</span>
         <span class="exp-date">Apr 2026 – Present</span>
       </div>
       <div class="exp-company">We Build Software &nbsp;·&nbsp; <span class="exp-location">Remote</span></div>
       <ul class="exp-bullets">
         <li>Backend development in C# for Maya Movil, a Mexican mobile virtual network operator (MVNO).</li>
-        <li>Task management via Jira with a Pull Request-based workflow and code review process.</li>
-        <li>Team collaboration with a frontend developer under direct supervision of the Systems Director.</li>
+        <li>Agile workflow via Jira with a Pull Request-based process and code review.</li>
       </ul>
-      <div class="tech-row"><strong>Stack:</strong> C#, Jira, Git, Pull Requests, Telecom / MVNO</div>
+      <div class="tech-row"><strong>Stack:</strong> C#, Jira, Git, Pull Requests</div>
     </div>
 
     <div class="exp-entry">
       <div class="exp-top">
-        <span class="exp-jobtitle">Backend Developer / Data Analyst</span>
-        <span class="exp-date">Jul 2025 – Present</span>
-      </div>
-      <div class="exp-company">Maxima &nbsp;·&nbsp; <span class="exp-location">Guadalupe, Nuevo León, Mexico (On-site)</span></div>
-      <ul class="exp-bullets">
-        <li>Joined an active development team to migrate an enterprise ERM from a desktop application to a web platform using Blazor (C#) and PostgreSQL.</li>
-        <li>Implemented Google OAuth authentication for the web-based ERM, integrating with the existing user management system.</li>
-        <li>Managed the team's GitHub repository: code reviews, branch management, conflict resolution, and version control.</li>
-        <li>Administered a Windows Server environment and led its migration to Linux using virtual machines and Docker containers.</li>
-        <li>Analyzed operational data to produce reports supporting business decision-making.</li>
-      </ul>
-      <div class="tech-row"><strong>Stack:</strong> C#, Blazor, PostgreSQL, OAuth, Docker, Linux, Windows Server, Git</div>
-    </div>
-
-    <div class="exp-entry">
-      <div class="exp-top">
-        <span class="exp-jobtitle">Freelance Web Developer / Security Consultant</span>
+        <span class="exp-jobtitle">Freelance Web Developer / CI-CD</span>
         <span class="exp-date">Jul 15 – Jul 30, 2026</span>
       </div>
-      <div class="exp-company">Grupo Microtel del Norte S.A. de C.V. &nbsp;·&nbsp; <span class="exp-location">Monterrey, Nuevo León, Mexico (Remote)</span></div>
+      <div class="exp-company">Grupo Microtel del Norte &nbsp;·&nbsp; <span class="exp-location">Monterrey (Remote)</span></div>
       <ul class="exp-bullets">
-        <li>Migrated the corporate website from Wix to Next.js/TypeScript (7 pages), deployed on Bluehost.</li>
-        <li>Implemented web security hardening (CSP with dynamic hashes, HSTS, SRI, X-Content-Type-Options, CORP), raising the SecurityScorecard rating from C/73 to A/92.</li>
-        <li>Optimized images: 72 assets converted to WebP (~140 MB → ~4.5 MB, 97% reduction).</li>
-        <li>Built CI/CD with an SSH + rsync deployment script and GitHub Actions.</li>
+        <li>Built CI/CD with an SSH + rsync deployment script and GitHub Actions (lint, build, deploy).</li>
+        <li>Implemented web security hardening (CSP, HSTS, SRI), raising SecurityScorecard from C/73 to A/92.</li>
       </ul>
-      <div class="tech-row"><strong>Stack:</strong> Next.js 16, React 19, TypeScript, Tailwind CSS, Bluehost, SSH/rsync, GitHub Actions, Apache/.htaccess</div>
+      <div class="tech-row"><strong>Stack:</strong> GitHub Actions, SSH/rsync, Linux, TypeScript</div>
     </div>
 
   </div>
@@ -322,10 +318,8 @@
       </div>
       <div class="edu-school">Specialization in Programming &amp; Software Engineering</div>
       <ul class="exp-bullets">
-        <li>Object-Oriented Programming, Data Structures, Operating Systems fundamentals, and Computational Graphics.</li>
-        <li>Web development coursework: Web Programming I &amp; II, Web Interface &amp; User Experience.</li>
-        <li>Programming electives track: Assembly Language, Database Administration &amp; Data Warehousing, Mobile Systems Programming, Server Administration, and Software Engineering.</li>
-        <li>Developed and deployed web applications with HTML5/CSS3 on AWS and Azure.</li>
+        <li>Object-Oriented Programming, Data Structures, Operating Systems fundamentals.</li>
+        <li>Programming electives track: Assembly Language, Mobile Systems Programming, Server Administration, Software Engineering.</li>
       </ul>
     </div>
 
@@ -337,17 +331,39 @@
 
     <div class="proj-entry">
       <div class="proj-top">
-        <span class="proj-name">Gear Pro — Production E-commerce Platform</span>
+        <span class="proj-name">HTTP Server in C <em style="font-weight:400; font-size:9.5px; color:#0077B6;">(in progress)</em></span>
+        <span class="proj-date">2026</span>
+      </div>
+      <ul class="proj-bullets">
+        <li>Building a raw-socket HTTP/1.1 server from scratch in C: request parsing, threading, and Makefile build.</li>
+        <li>Adding unit tests and a CI pipeline (GitHub Actions) that compiles and runs tests + valgrind.</li>
+      </ul>
+      <div class="tech-row"><strong>Stack:</strong> C, sockets, pthreads, Makefile, GitHub Actions</div>
+    </div>
+
+    <div class="proj-entry">
+      <div class="proj-top">
+        <span class="proj-name">CAN Bus Tooling with SocketCAN <em style="font-weight:400; font-size:9.5px; color:#0077B6;">(in progress)</em></span>
+        <span class="proj-date">2026</span>
+      </div>
+      <ul class="proj-bullets">
+        <li>Studying the CAN protocol (frames, arbitration, CRC) and the J1939/ISOBUS application layers used in agriculture.</li>
+        <li>Using the Linux SocketCAN stack over a virtual <code>vcan0</code> interface (<code>candump</code>/<code>cansend</code>) to build a frame generator/decoder.</li>
+      </ul>
+      <div class="tech-row"><strong>Stack:</strong> C/Python, SocketCAN, can-utils, J1939</div>
+    </div>
+
+    <div class="proj-entry">
+      <div class="proj-top">
+        <span class="proj-name">Gear Pro — E-commerce Platform (Production)</span>
         <span class="proj-date">2025</span>
       </div>
       <div class="proj-link">gearpro.mx &nbsp;·&nbsp; gearpro.shop</div>
       <ul class="proj-bullets">
-        <li>Architected a Turborepo monorepo with a public storefront (Next.js/TypeScript) and a separate admin panel, both deployed to Vercel.</li>
-        <li>Integrated 3 payment gateways: Stripe, Mercado Pago, and PayPal, supporting card, OXXO, bank transfer, and international payments.</li>
-        <li>Implemented real-time shipping quotes and label generation via Skydropx API.</li>
-        <li>Set up Supabase for authentication, role-based access control (admin/customer), database, and image storage; transactional emails via Resend.</li>
+        <li>Architected a monorepo (Next.js/TypeScript) with storefront + admin panel, deployed to Vercel.</li>
+        <li>Integrated 3 payment gateways (Stripe, Mercado Pago, PayPal) and real-time shipping via Skydropx API.</li>
       </ul>
-      <div class="tech-row"><strong>Stack:</strong> Next.js 16, React, TypeScript, Tailwind CSS v4, Supabase, Stripe, Turborepo, Vercel</div>
+      <div class="tech-row"><strong>Stack:</strong> Next.js, TypeScript, Supabase, Stripe, Turborepo</div>
     </div>
 
   </div>
