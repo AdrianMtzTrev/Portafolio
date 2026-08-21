@@ -85,6 +85,14 @@
       line-height: 1.6;
     }
 
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px 16px;
+      font-size: 10px;
+      color: #444;
+    }
+
     /* ── Experience ── */
     .exp-entry {
       margin-bottom: 8px;
@@ -238,21 +246,21 @@
   <div class="section">
     <div class="section-title">Resumen</div>
     <p class="summary-text">
-      Desarrollador Full Stack con experiencia en React/TypeScript y APIs REST en C#, administración de bases de datos relacionales y gestión de infraestructura de servidores. Apasionado por la automatización y el aprendizaje continuo de nuevas tecnologías. Capaz de trabajar tanto en desarrollo de nuevas funcionalidades como en mantenimiento, soporte técnico y resolución de incidencias, adaptándome con facilidad a los flujos de trabajo del equipo.
+      Desarrollo de software en C/C++ y C#: APIs REST y una plataforma e-commerce en producción, además de frontend con React/TypeScript. DevOps con Docker, Linux y pipelines de CI/CD; cómodo entre desarrollo nuevo, mantenimiento y soporte.
     </p>
   </div>
 
   <!-- SKILLS -->
   <div class="section">
     <div class="section-title">Habilidades</div>
-    <p class="skills-text">
-      <strong>Lenguajes:</strong> C/C++, C#, TypeScript, JavaScript, Python, HTML/CSS &nbsp;|&nbsp;
-      <strong>Frameworks:</strong> React, Next.js, Blazor &nbsp;|&nbsp;
-      <strong>Bases de datos:</strong> PostgreSQL, Supabase &nbsp;|&nbsp;
-      <strong>DevOps:</strong> Docker, Linux, Windows Server, Git, Vercel &nbsp;|&nbsp;
-      <strong>Integraciones:</strong> OAuth / Google Auth, Stripe, REST APIs &nbsp;|&nbsp;
-      <strong>Idiomas:</strong> Español (Nativo), Inglés (Avanzado)
-    </p>
+    <div class="skills-grid">
+      <div><strong>Lenguajes:</strong> C/C++, C#, TypeScript, JavaScript, Python</div>
+      <div><strong>Frameworks:</strong> React, Next.js, Blazor</div>
+      <div><strong>Bases de datos:</strong> PostgreSQL, Supabase</div>
+      <div><strong>DevOps:</strong> Docker, Linux, Windows Server, Git, Vercel</div>
+      <div><strong>Integraciones:</strong> OAuth / Google Auth, Stripe, REST APIs</div>
+      <div><strong>Idiomas:</strong> Español (Nativo), Inglés (Avanzado)</div>
+    </div>
   </div>
 
   <!-- EXPERIENCE -->

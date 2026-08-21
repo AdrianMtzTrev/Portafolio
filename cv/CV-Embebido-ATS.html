@@ -86,6 +86,19 @@
       font-style: italic;
     }
 
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px 16px;
+      font-size: 10px;
+      color: #444;
+    }
+
+    .skills-grid em {
+      color: #555;
+      font-style: italic;
+    }
+
     .exp-entry {
       margin-bottom: 8px;
     }
@@ -247,13 +260,13 @@
   <!-- SKILLS -->
   <div class="section">
     <div class="section-title">Skills</div>
-    <p class="skills-text">
-      <strong>Programming Langs:</strong> C, C++, Python, C#, Assembly (coursework) &nbsp;|&nbsp;
-      <strong>Embedded:</strong> CAN <em>(learning — SocketCAN, J1939/ISOBUS)</em>, I2C, SPI, UART <em>(learning)</em>, cross-compilation, QEMU <em>(learning)</em>, Buildroot/Yocto <em>(learning)</em> &nbsp;|&nbsp;
-      <strong>Build &amp; Release:</strong> Linux, Docker, Git/GitHub, GitHub Actions, CI/CD, Makefile/CMake, Markdown, Jenkins <em>(familiar)</em> &nbsp;|&nbsp;
-      <strong>Debug:</strong> gdb, valgrind, dmesg, strace, /sys, /proc &nbsp;|&nbsp;
-      <strong>Languages:</strong> Spanish (Native), English (Advanced)
-    </p>
+    <div class="skills-grid">
+      <div><strong>Programming Langs:</strong> C, C++, Python, C#, Assembly (coursework)</div>
+      <div><strong>Languages:</strong> Spanish (Native), English (Advanced)</div>
+      <div><strong>Embedded:</strong> CAN <em>(learning — SocketCAN, J1939/ISOBUS)</em>, I2C, SPI, UART <em>(learning)</em>, cross-compilation, QEMU <em>(learning)</em>, Buildroot/Yocto <em>(learning)</em></div>
+      <div><strong>Build &amp; Release:</strong> Linux, Docker, Git/GitHub, GitHub Actions, CI/CD, Makefile/CMake, Markdown, Jenkins <em>(familiar)</em></div>
+      <div><strong>Debug:</strong> gdb, valgrind, dmesg, strace, /sys, /proc</div>
+    </div>
   </div>
 
   <!-- EXPERIENCE -->
